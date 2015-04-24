@@ -1,0 +1,18 @@
+Subscription:
+  name: string
+  start: date
+  expiry: date
+  nextpayment: integer
+  amountdue: float
+  user_id: integer
+
+User:
+  login: string
+  familysharing: integer
+
+Device:
+  name: string
+
+Access:
+  device_id: integer
+  subscription_id: integer
