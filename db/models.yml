@@ -1,8 +1,8 @@
 Subscription:
   name: string
-  start: date
-  expiry: date
-  nextpayment: integer
+  start: string
+  expiry: string
+  nextpayment: string
   amountdue: float
   user_id: integer
 

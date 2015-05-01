@@ -1,0 +1,7 @@
+<h1> Manage web and mobile subscriptions </h1>
+
+<% @subs.each do |sub| %>
+
+	<p><a href="/subscriptions/<%= sub.id %>" > <%= sub.name %></a> </p>
+
+<% end %>

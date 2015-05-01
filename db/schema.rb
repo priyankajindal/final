@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "subscriptions", force: :cascade do |t|
     t.string  "name"
-    t.date    "start"
-    t.date    "expiry"
-    t.integer "nextpayment"
+    t.string  "start"
+    t.string  "expiry"
+    t.string  "nextpayment"
     t.float   "amountdue"
     t.integer "user_id"
   end

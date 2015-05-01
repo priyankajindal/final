@@ -1,0 +1,16 @@
+
+<h1> <%= @sub.name %></h1>
+	<p> Start: <%= @sub.start %></p>
+	<p> Expiry: <%= @sub.expiry %></p>
+	<p> Next payment: <%= @sub.nextpayment %></p>
+	<p> Amount due: <%= @sub.amountdue %></p>
+
+<h1> Device access on: </h1>
+
+<% access = Access.where(subscription_id: @sub.id) %>
+
+<% access.each do |subaccess| %>
+		<p> <%= Device.find_by(id: subaccess.device_id).name %> </p>
+
+<% end %>
+	
