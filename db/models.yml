@@ -5,6 +5,7 @@ Subscription:
   nextpayment: string
   amountdue: float
   user_id: integer
+  image: string
 
 User:
   login: string

@@ -18,11 +18,11 @@ sehgal = User.create(login: "sehgal", familysharing: 1)
 
 # Create the subscriptions
 puts "Creating subscriptions..."
-netflix = Subscription.create(name: "Netflix", start: "01/30/2015", expiry: "monthly", nextpayment: "05/25/2015", amountdue: 9.99, user_id: shashwat.id)
-itunes = Subscription.create(name: "iTunes", start: "01/30/2012", expiry: "none", nextpayment: "none", amountdue: 0, user_id: priyanka.id)
-nytimes = Subscription.create(name: "NYTimes", start: "01/30/2014", expiry: "monthly", nextpayment: "05/10/2015", amountdue: 15.99, user_id: sehgal.id)
-vogue = Subscription.create(name: "Vogue", start: "04/30/2015", expiry: "08/30/2015", nextpayment: "none", amountdue: 0, user_id: priyanka.id)
-linkedin = Subscription.create(name: "LinkedIn", start: "03/30/2015", expiry: "monthly", nextpayment: "05/15/2015", amountdue: 29.99, user_id: priyanka.id)
+netflix = Subscription.create(name: "Netflix", start: "01/30/2015", expiry: "monthly", nextpayment: "05/25/2015", amountdue: 9.99, user_id: shashwat.id, image: "netflix.jpg")
+itunes = Subscription.create(name: "iTunes", start: "01/30/2012", expiry: "none", nextpayment: "none", amountdue: 0, user_id: priyanka.id, image: "itunes.jpg")
+nytimes = Subscription.create(name: "NYTimes", start: "01/30/2014", expiry: "monthly", nextpayment: "05/10/2015", amountdue: 15.99, user_id: sehgal.id, image: "nytimes.jpg")
+vogue = Subscription.create(name: "Vogue", start: "04/30/2015", expiry: "08/30/2015", nextpayment: "none", amountdue: 0, user_id: priyanka.id, image: "vogue.jpg")
+linkedin = Subscription.create(name: "LinkedIn", start: "03/30/2015", expiry: "monthly", nextpayment: "05/15/2015", amountdue: 29.99, user_id: priyanka.id, image: "linkedin.jpg")
 
 # Create the Devices
 puts "Creating devices..."

@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 0) do
     t.string  "nextpayment"
     t.float   "amountdue"
     t.integer "user_id"
+    t.string  "image"
   end
 
   add_index "subscriptions", ["user_id"], name: "index_subscriptions_on_user_id"

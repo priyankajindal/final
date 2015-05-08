@@ -1,0 +1,13 @@
+<h3 class="page-header">
+  All Devices
+  <span class="pull-right">
+    <%= link_to "New Device", new_device_url, class: 'btn btn-sm btn-success' %>
+  </span>
+</h3>
+
+<ul>
+  <% @devices.each do |device| %>
+    <li><%= link_to device.name, edit_device_url(device) %>
+    <%= link_to 'Delete', device_url(device), method: :delete, data: { confirm:'Seriously?'} %> </li>
+  <% end %>
+</ul>

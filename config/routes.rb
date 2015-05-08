@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   # delete '/subscriptions/:id', to: 'subscriptions#destroy'
 
   resources :subscriptions
+  resources	:devices
+
+  root to: "subscriptions#index"
   
 end
 
