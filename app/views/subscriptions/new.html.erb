@@ -1,0 +1,32 @@
+
+<%= form_for @sub do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :start%>
+    <%= form.text_field :start, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :expiry %>
+    <%= form.text_field :expiry, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :nextpayment %>
+    <%= form.text_field :nextpayment, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :amountdue%>
+    <%= form.text_field :amountdue, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :image%>
+    <%= form.text_field :image, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :user_id %>
+    <%= form.collection_select(:user_id, User.all, :id, :login, {}, {class: "form-control"})%>
+  </div>
+  <%= form.button 'Create Subscription', class: "btn btn-success" %>
+<% end %>
