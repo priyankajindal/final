@@ -9,6 +9,8 @@ Subscription:
 
 User:
   login: string
+  email: string
+  password_digest: string
   familysharing: integer
 
 Device:

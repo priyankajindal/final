@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
   resources :subscriptions
   resources	:devices
+  resources :sessions
+  resources :users
+
+  get "/logout", to: "sessions#destroy"
 
   root to: "subscriptions#index"
   

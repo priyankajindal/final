@@ -1,5 +1,6 @@
 class SubscriptionsController < ApplicationController
-
+skip_before_action :auth, only: [:index]
+  
   def index
 	@subs = Subscription.all 
   end

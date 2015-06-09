@@ -1,16 +1,15 @@
-<h1> Manage web and mobile subscriptions </h1>
+<h2> Have multiple recurring subscriptions that you manage online? Simplify your life with AppEasy!</h2>
 
 <div class="row">
     <% @subs.each do |sub| %>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-      <!-- <a href="/movies/1"><img src="/assets/guardians.jpg"></a> -->
+    <div class="col-sm-3">
+     <!--  <div class="thumbnail"> -->
       <%= link_to image_tag(sub.image), subscription_url(sub) %>
       <div class="caption">
         <h3><%= link_to sub.name, subscription_url(sub) %></h3>
         <!-- <p>insert something</p> -->
       </div>
-    </div>
+   <!--  </div> -->
   </div>
     <% end %>
 </div>

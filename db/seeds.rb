@@ -12,9 +12,10 @@ Access.delete_all
 
 # Create the users
 puts "Creating user..."
-priyanka = User.create(login: "priyanka", familysharing: 0)
-shashwat = User.create(login: "shashwat", familysharing: 1)
-sehgal = User.create(login: "sehgal", familysharing: 1)
+priyanka = User.create(login: "priyanka", email: "pjindal2015@kellogg.northwestern.edu", password: "secret", familysharing: 0)
+shashwat = User.create(login: "shashwat", email: "shashwatsehgal@gmail.com", password: "whatever", familysharing: 1)
+sehgal = User.create(login: "sehgal", email: "shashwatsehgal@gmail.com", password: "whatever", familysharing: 1)
+
 
 # Create the subscriptions
 puts "Creating subscriptions..."
